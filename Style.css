@@ -1,0 +1,451 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=K2D:100,200,300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*My Code*/
+
+/*header*/
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  height: 4.5vw;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+}
+
+.header nav{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.header img{
+  width: 9.5vw;
+  padding: 20px 0px 0px 40px;
+}
+
+.contact {
+  font-family: 'K2D', sans-serif;
+  font-size: 0.7vw;
+  text-align: center;
+	height: 1vw;
+  color: #4f4f4f;
+  padding: 0px 5px;
+  margin: 15px 5px 0px 0px;
+  border-radius: 5px;
+}
+
+.contact:hover {
+  color: #fafafa;
+  background-color: #e20000;
+  transition-duration: 1s;
+	text-decoration: none;
+}
+.contact:link {
+	text-decoration: none;
+}
+
+.header nav ul{
+  padding: 0px 20px 5px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header nav ul li{
+  line-height: 1vw;
+  border-right: 1px;
+  border-style: solid;
+  border-color: #5e5e5e;
+}
+
+.header nav ul li:last-child{
+  border-style: none;
+}
+
+.header nav ul li a {
+  font-family: 'K2D', sans-serif;
+  font-size: 1.1vw;
+  padding: 0.35vw 20px;
+  color: #4f4f4f;
+  letter-spacing: 3px;
+	text-decoration: none;
+}
+
+.header nav ul li a:hover {
+  text-shadow: 2px 2px 2px #e2e2e2;
+  color: #ff0000;
+  background-color: #fafafa;
+  transition-duration: 1s;
+}
+
+/*header*/
+/*content*/
+
+.background-scuderia {
+  position: absolute;
+  top: 10vw;
+  right: 5vw;
+  width: 22vw;
+  height: 27vw;
+  background-color: rgba(99, 99, 99, 0.3);
+  border-radius: 15px;
+  color: #BFBFBF;
+  font-family: 'K2D', sans-serif;
+  z-index: 0;
+	overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+
+.background-scuderia h3 {
+  font-family: 'K2D', sans-serif;
+  font-size: 1.5vw;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.background-scuderia p {
+  font-family: 'K2D', sans-serif;
+  font-size: 0.9vw;
+  line-height: 20px;
+  padding: 0px 14px;
+
+}
+
+
+.background-video {
+  width: 100%;
+  overflow:hidden;
+  height: 46vw;
+  vertical-align: center;
+
+}
+
+#backVideo {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-45%);
+  z-index: -100;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+  color: #4f4f4f;
+}
+
+/*sf71h*/
+.wrapper #SF71H {
+  margin-top: 20px;
+  background-color: #f2f2f2;
+}
+
+.wrapper #SF71H h3 {
+  font-family: 'K2D', sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px #e2e2e2;
+  padding: 80px 40px 100px;
+  letter-spacing: 10px;
+}
+
+.wrapper #SF71H img {
+  width: 100%;
+}
+
+.car-desc {
+	width: 100%;
+}
+
+.car-desc th {
+  font-family: 'K2D', sans-serif;
+  padding: 20px;
+  font-size: 1.4vw;
+  text-shadow: 2px 2px 2px #e2e2e2;
+  font-weight: 600;
+	text-align: center;
+}
+
+.car-desc td {
+  width: 500px;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 0.9vw;
+  padding: 0px 40px 20px;
+}
+
+.car-specs {
+  width: 100%;
+  height: 120px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.car-specs ul {
+  display: flex;
+  padding: 0px 30px;
+}
+
+.car-specs ul li {
+  padding: 0px 30px;
+}
+
+/*team*/
+#Team {
+	margin-top: 20px;
+	background-color: #f2f2f2;
+}
+
+#Team .team-title {
+	font-family: 'K2D', sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px #e2e2e2;
+  padding: 80px 40px;
+  letter-spacing: 10px;
+}
+
+#Team h3 {
+	font-family: 'K2D', sans-serif;
+	font-size: 1.8vw;
+	text-shadow: 2px 2px 2px #e2e2e2;
+	line-height: 20px;
+	padding: 30px 14px;
+}
+
+#Team ul {
+	font-family: 'K2D', sans-serif;
+	font-size: 1.2vw;
+	padding: 20px 40px 50px;
+}
+
+#Team p {
+	font-family: 'Bai Jamjuree', sans-serif;;
+	font-size: 0.9vw;
+	line-height: 20px;
+	padding: 0px 14px;
+}
+
+#sebastian-vettel {
+	display: flex;
+}
+#sebastian-vettel img {
+	height: 100%;
+	width: 30vw;
+}
+
+#kimi-raikkonen {
+	display: flex;
+}
+#kimi-raikkonen img {
+	height: 100%;
+	width: 30vw;
+}
+
+/*season2018*/
+
+#Season2018 {
+	width: 100%;
+	margin-top: 20px;
+	background-color: #f2f2f2;
+}
+
+#Season2018 h3 {
+	font-family: 'K2D', sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px #e2e2e2;
+  padding: 80px 40px 30px;
+  letter-spacing: 10px;
+}
+
+.races {
+	display: flex;
+	justify-content: center;
+}
+
+#Season2018 ul {
+	display: flex;
+	justify-content: center;
+	width: 90%;
+	height: 20px;
+	padding: 10px 15px;
+	background-color: rgba(226, 0, 0, 0.5);
+	border-radius: 10px 10px;
+}
+
+#Season2018 li a {
+	text-decoration: none;
+	font-family: 'Bai Jamjuree', sans-serif;;
+	font-size: 0.9vw;
+	font-weight: 600;
+	line-height: 20px;
+	color: #4f4f4f;
+	padding: 10px 0.8vw;
+}
+#Season2018 span {
+	display: none;
+	text-decoration: none;
+	font-family: 'Bai Jamjuree', sans-serif;;
+	font-size: 0.9vw;
+	border-radius: 10px 10px;
+}
+
+#Season2018 li:hover .hiddenp {
+	display: flex;
+	padding: 20px 0px 0px 0px;
+	margin-left: -1.1vw;
+	background-color: rgba(163, 163, 163, 0.3);
+	border-radius: 10px 10px 10px 10px;
+}
+
+#Season2018 li a:hover {
+	font-size: 1.2vw;
+	background-color: #e20000;
+	padding: 10px 45px;
+	border-radius: 50%;
+	transition-duration: 0.3s;
+	box-shadow: 1px 0px 10px gray;
+}
+
+
+/*footer*/
+.footer {
+	width: 100%;
+}
+
+.sponsors {
+	margin: 20px 0px 10px;
+	background-color: #c6c6c6;
+}
+
+.sponsors h3{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	font-family: 'K2D', sans-serif;
+	font-size: 0.95vw;
+	font-weight: 200;
+	padding: 30px 0px 0px;
+}
+
+.sponsors ul{
+	width: 100%;
+	display:flex;
+	justify-content: center;
+}
+
+.sitemap {
+	width:100%;
+	background-color: #444;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.sitemap h1 {
+	font-family: 'K2D', sans-serif;
+	font-size: 0.95vw;
+	font-weight: 100;
+	color: white;
+	letter-spacing: 2px;
+	padding: 20px 20px 0px;
+}
+
+.sitemap h2 {
+	font-family: 'K2D', sans-serif;
+	font-size: 0.95vw;
+	font-weight: 100;
+	color: white;
+	letter-spacing: 2px;
+	padding: 20px 20px 0px;
+}
+
+.sitemap ul {
+	padding: 30px 0px 40px;
+}
+
+.sitemap a {
+	font-family: 'K2D', sans-serif;
+	font-size: 0.6vw;
+	font-weight: 200;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.sitemap a:hover {
+	color: #ff1111;
+	transition-duration: 0.5s;
+	text-decoration: none;
+}
+
+.sitemap-social ul {
+	padding: 22px;
+}
+
+.sitemap-social li a {
+	display: flex;
+	align-items: center;
+	padding: 0px 0px 8px;
+}
+
+script
